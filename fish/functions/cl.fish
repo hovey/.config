@@ -1,9 +1,10 @@
 function cl
     # helper function for cleaning LaTeX directory
     # use rm -f where the -f (force) removes silently
-    cd temp
+    # cd temp
     rm -f *.aux
     rm -f *.bbl
+	rm -f *.bcf
     rm -f *.blg
     rm -f *.lof
     rm -f *.lot
@@ -14,6 +15,7 @@ function cl
     rm -f *.pyg
     rm -f *.fdb_latexmk
     rm -f *.fls
-    cd ../
+	rm -f main.run.xml
+    # cd ../
     echo Completed cleaning of temp folder.
 end

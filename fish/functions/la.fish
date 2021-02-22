@@ -1,5 +1,5 @@
 function la
-    # pdflatex main.tex
+    pdflatex main.tex
     # pdflatex -shell-escape main.tex
-    pdflatex -shell-escape --output-directory=temp main.tex
+    # pdflatex -shell-escape --output-directory=temp main.tex
 end
