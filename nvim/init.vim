@@ -67,7 +67,7 @@ set showmode " turn on showing of current mode
 "set background=light " change from default to light background
 "set background=dark " change from default to dark background
 syntax on
-" color dracula
+color dracula
 set t_Co=256 " force 256 colors on the terminal
 "
 "
