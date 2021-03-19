@@ -1,4 +1,4 @@
 function bb
-    # bibtex temp/main
-	biber main
+    bibtex temp/main
+	# biber main
 end
