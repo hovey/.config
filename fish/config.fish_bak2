@@ -5,8 +5,5 @@
 # <<< conda initialize <<<
 
 # 2021-07-18 Update Miniconda to Python 3.9
-# eval /Users/sparta/opt/miniconda3/bin/conda "shell.fish" "hook" $argv | source
-
-# 2021-07-19 Update s1060600 to Python 3.9
-eval /Users/chovey/opt/miniconda3/bin/conda "shell.fish" "hook" $argv | source
+eval /Users/sparta/opt/miniconda3/bin/conda "shell.fish" "hook" $argv | source
 
