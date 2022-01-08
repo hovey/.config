@@ -1,4 +1,5 @@
 " Setting the leader
+" 2022-01-08
 let mapleader=' '
 
 set nocompatible
