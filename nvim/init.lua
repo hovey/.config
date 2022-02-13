@@ -1,2 +1,6 @@
+-- require "~/.config/nvim/lua/user/options.lua"
 require "user.options"
--- require "lua.user.options.lua"
+
+-- require "~/.config/nvim/lua/user/keymaps.lua"
+require "user.keymaps"
+
