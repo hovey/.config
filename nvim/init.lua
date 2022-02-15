@@ -9,3 +9,6 @@ require "user.keymaps"
 -- require "~/.config/nvim/lua/user/plugins.lua"
 require "user.plugins"
 
+-- require "~/.config/nvim/lua/user/coloscheme.lua"
+require "user.colorscheme"
+
