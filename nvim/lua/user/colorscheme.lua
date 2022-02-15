@@ -2,7 +2,9 @@
 -- vim.cmd "colorscheme default"
 -- we implement the same but with error handling in lua
 
-local cs = "default"  -- the desire default colorscheme is also called default
+-- local cs = "default"  -- the desired default colorscheme is also called "default"
+-- local cs = "tokyonight"  -- the desire default colorscheme
+local cs = "darkplus"  -- the desire default colorscheme
 
 local status_ok, _ = pcall(vim.cmd, "colorscheme " .. cs)
 if not status_ok then
