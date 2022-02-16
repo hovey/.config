@@ -8,7 +8,7 @@ local cs = "darkplus"  -- the desire default colorscheme
 
 local status_ok, _ = pcall(vim.cmd, "colorscheme " .. cs)
 if not status_ok then
-  vim.notify("colorscheme " .. cs .. " not found.")
+  vim.notify("'colorscheme " .. cs .. "' not found, reverting to 'colorscheme default'")
   return
 end
 
