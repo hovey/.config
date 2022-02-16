@@ -9,6 +9,15 @@ require "user.keymaps"
 -- require "~/.config/nvim/lua/user/plugins.lua"
 require "user.plugins"
 
--- require "~/.config/nvim/lua/user/coloscheme.lua"
+-- require "~/.config/nvim/lua/user/colorscheme.lua"
 require "user.colorscheme"
 
+-- require "~/.config/nvim/lua/user/cmp.lua"
+require "user.cmp"
+
+-- require ~/.config/nvim/lua/user/lsp/ folder and contents
+-- this automatically loads
+-- ~/.config/nvim/lua/user/lsp/init.lua
+-- that is, lsp is a folder, and then lua automatically searches for
+-- the init.lua within that lsp folder
+require "user.lsp"

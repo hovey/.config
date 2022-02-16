@@ -3,7 +3,7 @@
 -- we implement the same but with error handling in lua
 
 -- local cs = "default"  -- the desired default colorscheme is also called "default"
--- local cs = "tokyonight"  -- the desire default colorscheme
+-- local cs = "tokyonight"  -- the desired default colorscheme
 local cs = "darkplus"  -- the desire default colorscheme
 
 local status_ok, _ = pcall(vim.cmd, "colorscheme " .. cs)
