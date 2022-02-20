@@ -21,3 +21,5 @@ require "user.cmp"
 -- that is, lsp is a folder, and then lua automatically searches for
 -- the init.lua within that lsp folder
 require "user.lsp"
+
+require "user.telescope"
