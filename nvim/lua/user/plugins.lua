@@ -80,6 +80,11 @@ return packer.startup(function(use)
   }
   use "p00f/nvim-ts-rainbow"
 
+  -- Gitsigns
+  -- Github branch 11/22 https://github.com/LunarVim/Neovim-from-scratch/blob/11-gitsigns/lua/user/gitsigns.lua)
+  -- Youtube video 14/18 https://youtu.be/ZgyVY7tArwg
+  use "lewis6991/gitsigns.nvim"
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
