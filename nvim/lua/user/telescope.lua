@@ -3,6 +3,9 @@ if not status_ok then
   return
 end
 
+-- Reference
+-- https://github.com/nvim-telescope/telescope.nvim
+
 -- CBH comment out begin 2022-02-20
 -- Already have an instance of telescope from line 1 above
 -- require("telescope").load_extension("media_files")
@@ -15,6 +18,9 @@ end
 -- CBH comment out end 2022-02-20
 
 local actions = require "telescope.actions"
+-- local builtin = require "telescope.builtin"
+-- local themes = require "telescope.themes"
+-- builtin.find_files(themes.get_ivy())
 
 telescope.setup {
   defaults = {
@@ -96,6 +102,9 @@ telescope.setup {
     -- }
     -- Now the picker_config_key will be applied every time you call this
     -- builtin picker
+    find_files = {
+      theme = "ivy"
+    }
   },
   extensions = {
     -- CBH comment begin 2022-02-20

@@ -30,6 +30,7 @@ if not status_ok then
   return
 end
 
+
 -- CBH prefers the right-hand-side buffer panel instead of the pop up, so
 -- comment out the pop up window:
 -- Have packer use a popup window
@@ -71,6 +72,13 @@ return packer.startup(function(use)
   -- Telescope (07-Telescope video) https://youtu.be/OhnLevLpGB4
   use "nvim-telescope/telescope.nvim"
   -- use "nvim-telescope/telescope-media-files.nvim"
+
+  -- Treesitter (08-Treesitter video) https://youtu.be/hkxPa5w3bZ0
+  use {
+    "nvim-treesitter/nvim-treesitter",
+    run = ":TSUpdate",  -- used with maintained setting
+  }
+  use "p00f/nvim-ts-rainbow"
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

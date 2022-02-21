@@ -22,4 +22,8 @@ require "user.cmp"
 -- the init.lua within that lsp folder
 require "user.lsp"
 
+-- require "~/.config/nvim/lua/user/telescope.lua"
 require "user.telescope"
+
+-- require "~/.config/nvim/lua/user/treesitter.lua"
+require "user.treesitter"
