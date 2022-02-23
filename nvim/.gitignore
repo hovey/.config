@@ -1,2 +1,5 @@
 # ignore the plugin/ directory, since it is compiled by lua on a local target
 plugin/
+
+# ignore macOS index files
+# .DS_Store

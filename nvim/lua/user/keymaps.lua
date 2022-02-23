@@ -1,6 +1,5 @@
 -- From ChrisAtMachine
 -- https://youtu.be/435-amtVYJ8
- 
 -- no recurse map is "noremap", silent so we don't see the output for the keymap
 local opts = { noremap = true, silent = true }
 
@@ -33,12 +32,13 @@ keymap("n", "<C-j>", "<C-w>j", opts)  -- jump to down split
 keymap("n", "<C-k>", "<C-w>k", opts)  -- jump to up split
 keymap("n", "<C-l>", "<C-w>l", opts)  -- jump to right split
 
+-- Netrw
 -- Left explore (Lexplore) 30 columns and carriage return
-keymap("n", "<leader>e", ":Lex 30<cr>", opts)
+-- keymap("n", "<leader>e", ":Lex 30<cr>", opts)  -- replaced with nvimtree
 
 -- Resize the veritical and horizontal splits with CTRL+arrow keys
-keymap("n", "<C-Up>", ":resize +2<CR>", opts)
-keymap("n", "<C-Down>", ":resize -2<CR>", opts)
+keymap("n", "<C-Up>", ":resize -2<CR>", opts)
+keymap("n", "<C-Down>", ":resize +2<CR>", opts)
 keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
 keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 
@@ -88,3 +88,5 @@ keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
 -- keymap("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", opts)
 keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
 
+-- Nvimtree
+keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts) -- instead of Netrw

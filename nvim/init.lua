@@ -15,7 +15,7 @@ require "user.colorscheme"
 -- require "~/.config/nvim/lua/user/cmp.lua"
 require "user.cmp"
 
--- require ~/.config/nvim/lua/user/lsp/ folder and contents
+-- require "~/.config/nvim/lua/user/lsp/" folder and contents
 -- this automatically loads
 -- ~/.config/nvim/lua/user/lsp/init.lua
 -- that is, lsp is a folder, and then lua automatically searches for
@@ -27,7 +27,10 @@ require "user.telescope"
 
 -- require "~/.config/nvim/lua/user/treesitter.lua"
 require "user.treesitter"
---
+
 -- require "~/.config/nvim/lua/user/gitsigns.lua"
 require "user.gitsigns"
+
+-- require "~/.config/nvim/lua/user/nvim-tree.lua"
+require "user.nvim-tree"
 

@@ -30,7 +30,6 @@ if not status_ok then
   return
 end
 
-
 -- CBH prefers the right-hand-side buffer panel instead of the pop up, so
 -- comment out the pop up window:
 -- Have packer use a popup window
@@ -48,6 +47,9 @@ return packer.startup(function(use)
   use "wbthomason/packer.nvim" -- Have packer manage itself
   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
+  -- use "numToStr/Comment.nvim" -- Easily comment stuff
+  use 'kyazdani42/nvim-web-devicons' -- nvimtree icons
+  use 'kyazdani42/nvim-tree.lua' -- nvimtree
 
   -- Colorschemes
   -- use 'folke/tokyonight.nvim'
@@ -78,7 +80,7 @@ return packer.startup(function(use)
     "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate",  -- used with maintained setting
   }
-  use "p00f/nvim-ts-rainbow"
+  use "p00f/nvim-ts-rainbow" -- rainbow parenthesis
 
   -- Gitsigns
   -- Github branch 11/22 https://github.com/LunarVim/Neovim-from-scratch/blob/11-gitsigns/lua/user/gitsigns.lua)
