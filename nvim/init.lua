@@ -1,3 +1,4 @@
+-- Based on https://www.youtube.com/c/ChrisAtMachine/playlists
 -- require "~/.config/nvim/lua/user/options.lua"
 require "user.options"
 
@@ -34,3 +35,5 @@ require "user.gitsigns"
 -- require "~/.config/nvim/lua/user/nvim-tree.lua"
 require "user.nvim-tree"
 
+-- require "~/.config/nvim/lua/user/bufferline.lua"
+require "user.bufferline"
