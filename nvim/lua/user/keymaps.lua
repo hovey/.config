@@ -36,7 +36,7 @@ keymap("n", "<C-l>", "<C-w>l", opts)  -- jump to right split
 -- Left explore (Lexplore) 30 columns and carriage return
 -- keymap("n", "<leader>e", ":Lex 30<cr>", opts)  -- replaced with nvimtree
 
--- Resize the veritical and horizontal splits with CTRL+arrow keys
+-- Resize the vertical and horizontal splits with CTRL+arrow keys
 keymap("n", "<C-Up>", ":resize -2<CR>", opts)
 keymap("n", "<C-Down>", ":resize +2<CR>", opts)
 keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)

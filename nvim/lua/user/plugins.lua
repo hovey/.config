@@ -52,6 +52,7 @@ return packer.startup(function(use)
   use "kyazdani42/nvim-tree.lua" -- nvimtree
   use "akinsho/bufferline.nvim" -- bufferline
   use "moll/vim-bbye" -- bufferline utility
+  use "nvim-lualine/lualine.nvim"
 
   -- Colorschemes
   -- use 'folke/tokyonight.nvim'
@@ -72,6 +73,8 @@ return packer.startup(function(use)
   -- LSP (Language Server Protocol)
   use "neovim/nvim-lspconfig" -- enable LSP
   use "williamboman/nvim-lsp-installer" -- simple to use language server installer
+  use "tamago324/nlsp-settings.nvim" -- language server settings defined in json for
+  use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
 
   -- Telescope (07-Telescope video) https://youtu.be/OhnLevLpGB4
   use "nvim-telescope/telescope.nvim"
@@ -82,9 +85,10 @@ return packer.startup(function(use)
     "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate",  -- used with maintained setting
   }
+  use "JoosepAlviste/nvim-ts-context-commentstring"
   use "p00f/nvim-ts-rainbow" -- rainbow parenthesis
 
-  -- Gitsigns
+  -- Git with Gitsigns
   -- Github branch 11/22 https://github.com/LunarVim/Neovim-from-scratch/blob/11-gitsigns/lua/user/gitsigns.lua)
   -- Youtube video 14/18 https://youtu.be/ZgyVY7tArwg
   use "lewis6991/gitsigns.nvim"

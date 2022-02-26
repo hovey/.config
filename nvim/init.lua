@@ -37,3 +37,6 @@ require "user.nvim-tree"
 
 -- require "~/.config/nvim/lua/user/bufferline.lua"
 require "user.bufferline"
+
+-- require "~/.config/nvim/lua/user/lualine.lua"
+require "user.lualine"
