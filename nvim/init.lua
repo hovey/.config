@@ -40,3 +40,6 @@ require "user.bufferline"
 
 -- require "~/.config/nvim/lua/user/lualine.lua"
 require "user.lualine"
+--
+-- require "~/.config/nvim/lua/user/toggleterm.lua"
+require "user.toggleterm"
