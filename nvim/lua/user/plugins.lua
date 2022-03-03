@@ -41,6 +41,8 @@ end
 --   },
 -- }
 
+-- Plugins get installed here:
+-- /Users/chovey/.local/share/nvim/site/pack/packer/start
 -- Install your plugins here
 return packer.startup(function(use)
   -- My plugins here GitHub repository reference as "user/repo"
@@ -57,8 +59,9 @@ return packer.startup(function(use)
   use "akinsho/toggleterm.nvim"
 
   -- Colorschemes
-  -- use 'folke/tokyonight.nvim'
+  use "folke/tokyonight.nvim"
   use "lunarvim/darkplus.nvim"
+  use "lukas-reineke/onedark.nvim"
 
   -- cmp plugins (completions plugin)
   use "hrsh7th/nvim-cmp" -- The completion plugin
@@ -94,6 +97,9 @@ return packer.startup(function(use)
   -- Github branch 11/22 https://github.com/LunarVim/Neovim-from-scratch/blob/11-gitsigns/lua/user/gitsigns.lua)
   -- Youtube video 14/18 https://youtu.be/ZgyVY7tArwg
   use "lewis6991/gitsigns.nvim"
+
+  -- https://github.com/lukas-reineke/indent-blankline.nvim
+  use "lukas-reineke/indent-blankline.nvim"
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

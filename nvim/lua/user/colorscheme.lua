@@ -5,6 +5,7 @@
 -- local cs = "default"  -- the desired default colorscheme is also called "default"
 -- local cs = "tokyonight"  -- the desired default colorscheme
 local cs = "darkplus"  -- the desired default colorscheme, used by ChrisAtMachine
+-- local cs = "onedark"  -- the desired default colorscheme, used by lukas-reineke
 
 local status_ok, _ = pcall(vim.cmd, "colorscheme " .. cs)
 if not status_ok then

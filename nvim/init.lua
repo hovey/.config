@@ -40,6 +40,9 @@ require "user.bufferline"
 
 -- require "~/.config/nvim/lua/user/lualine.lua"
 require "user.lualine"
---
+
 -- require "~/.config/nvim/lua/user/toggleterm.lua"
 require "user.toggleterm"
+
+-- require "~/.config/nvim/lua/user/indent_blankline.lua"
+require "user.indent_blankline"
