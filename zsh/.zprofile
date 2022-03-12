@@ -1,3 +1,4 @@
+# ref: https://brew.sh
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # move to ~/.config/zsh/.zshrc
