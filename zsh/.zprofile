@@ -1,3 +1,4 @@
+# moved .zprofile from ~/.zprofile to ~/.config/zsh/.zprofile
 # ref: https://brew.sh
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
