@@ -1,4 +1,9 @@
+echo "---------------------"
+echo "This is .zshrc_global"
+echo "---------------------"
+
 # cli keyboard shortcuts
+echo "Setting cbh command line interface shortcuts"
 alias ls="ls -AG"  # A show dot files, G colorize
 alias ll="ls -fltAG"
 alias gg="git status"
