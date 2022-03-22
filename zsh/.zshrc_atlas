@@ -20,3 +20,6 @@ unset __conda_setup
 
 # /bin/zsh $HOME/.config/zsh/.zshrc_global
 source $HOME/.config/zsh/.zshrc_global
+
+# set an environment variable for gurobi 2022-03-22
+export GUROBI_HOME=/Library/gurobi951/macos_universal2
