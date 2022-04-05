@@ -1,5 +1,5 @@
 echo "---------------------"
-echo "This is .zshrc_global"
+echo "This is /Users/cbh/.config/zsh/.zshrc_global"
 echo "---------------------"
 
 # cli keyboard shortcuts
