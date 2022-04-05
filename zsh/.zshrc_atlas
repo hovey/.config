@@ -1,7 +1,7 @@
 # 2022-03-17 start
-echo "--------------------"
-echo "This is .zshrc_atlas"
-echo "--------------------"
+echo "-------------------------------------------"
+echo "This is /Users/cbh/.config/zsh/.zshrc_atlas"
+echo "-------------------------------------------"
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/opt/homebrew/Caskroom/miniconda/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
