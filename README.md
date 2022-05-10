@@ -1,6 +1,6 @@
 # Hello World
 
-.config folder for personal and work macs
+Iitems for personal and work macs.
 
 
 
