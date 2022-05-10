@@ -75,7 +75,8 @@ set background=light " change from default to light background
 " *--------*
 " | COLUMN |
 " *--------*-------------------------------------
-set colorcolumn=80 " homage to the IBM punch card with 80 columns
+set colorcolumn=80,88 " homage to the IBM punch card with 80 columns
+" set colorcolumn=88 " a second upper bound for Python
 
 " *--------*
 " | CURSOR |
@@ -203,6 +204,4 @@ nnoremap <leader>vs :source $MYVIMRC<cr>
 " inoremap <c-s> <Esc>:w<CR>i
 " visual mode save file
 " vnoremap <c-s> <Esc>:w<CR>
-
-
-
+"
