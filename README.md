@@ -1,6 +1,3 @@
 # Hello World
 
-Iitems for personal and work macs.
-
-
-
+Items for personal and work macs.
