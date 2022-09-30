@@ -1,3 +1,10 @@
+" 2022-09-30 
+" Learn what's new in vim 9.0
+" from https://www.youtube.com/watch?v=ZvKH-LZ-_6A Amit Shukla 2022-08-27
+" https://github.com/AmitXShukla/AmitXShukla.github.io/tree/master/blogs/vim
+" Part 2: Learn VIM: https://www.youtube.com/watch?v=oTnVfnd6lkU
+" Part 3: TMUX: https://youtu.be/AnyztEoePFc
+
 " This is the cbh-version of the .vimrc file.  To reference this file, in
 " the ~/.vimrc on the local machine, use this line:
 " source ~/.config/vim/cbh-vimrc.txt
@@ -97,8 +104,8 @@ au InsertLeave * hi CursorLine ctermbg=darkgray guibg=darkgray
 " *-------*
 " | FOLDS |
 " *-------*--------------------------------------
-set foldmethod=indent
-hi Folded ctermbg=black
+" set foldmethod=indent
+" hi Folded ctermbg=black
 
 
 " *----------*
@@ -136,7 +143,9 @@ hi clear SpellBad
 "hi SpellBad cterm=underline ctermfg=red
 "hi SpellBad ctermbg=gray ctermfg=red
 hi SpellBad cterm=underline ctermfg=darkred
-
+"
+" Turn off spelling check of capitalized letters
+set spellcapcheck=
 
 " *-------------*
 " | STATUS LINE |
@@ -169,8 +178,8 @@ set smartindent
 " *--------------------*-------------------------
 " See learnvimscriptthehardway.stevelosh.com/chapters/07.html
 " The idea: make it easier to make it easier to edit text.
-nnoremap <leader>ve :split $MYVIMRC<cr>
-nnoremap <leader>vs :source $MYVIMRC<cr>
+" nnoremap <leader>ve :split $MYVIMRC<cr>
+" nnoremap <leader>vs :source $MYVIMRC<cr>
 
 
 " *----------------------*
@@ -189,13 +198,13 @@ nnoremap <leader>vs :source $MYVIMRC<cr>
 "map CTRL-W :w<CR>
 "imap CTRL-W<Esc>:w<CR>i
 "imap CTLR-s <Esc>:w<CR>i
- 
+" 
 " http://vi.stackexchange.com/questions/2419/mapping-ctrls-does-not-work
 " Allow Ctrl-s and Ctrl-q as keybinds
 " silent !stty -ixon
 " Restore default ixon behavior when leaving vim
 " autocmd VimLeave * silent !stty ixon
- 
+" 
 " normal (non-insert) mode save file
 " nmap <c-s> :w<CR> 
 " nnoremap <c-s> :w<CR>
@@ -203,5 +212,3 @@ nnoremap <leader>vs :source $MYVIMRC<cr>
 " imap <c-s> <esc>:w<CR>i
 " inoremap <c-s> <Esc>:w<CR>i
 " visual mode save file
-" vnoremap <c-s> <Esc>:w<CR>
-"
