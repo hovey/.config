@@ -1,0 +1,55 @@
+# Reference
+# https://github.com/ianyh/Amethyst/blob/development/docs/configuration-files.md
+
+
+# add margins between windows
+window-margins: true
+window-margin-size: 0
+
+# modifier keys: shift | control | option | command
+#
+mod1:  # default was shift + option
+  - shift
+  - command
+#
+mod2:  # default was shift + control + option
+  - shift
+  - control
+  - command
+
+shrink-main:
+  mod: mod1
+  key: H
+
+expand-main:
+  mod: mod1
+  key: L
+
+# relaunch Amethyst, default was mod2 + z
+relaunch-amethyst:
+  mod: mod1
+  key: Z
+
+# use tall and full screen layouts
+layouts:
+  - tall
+  - fullscreen
+  - tall-right
+  - wide
+  - two-pane
+  - 3column-left
+  - middle-wide
+  - 3column-right
+  - 4column-left
+  - 4column-right
+  - column
+  - row
+  - floating
+
+# List of bundle identifiers for applications to either be automatically floating or automatically tiled based on floating-is-blacklist (default []).
+# floating:
+
+# Boolean flag determining behavior of the floating list. true if the applications should be floating and all others tiled. false if the applications should be tiled and all others floating (default true).
+# floating-is-blacklist:
+
+
