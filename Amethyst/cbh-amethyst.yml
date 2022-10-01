@@ -3,16 +3,18 @@
 
 
 # add margins between windows
-window-margins: true
-window-margin-size: 0
+window-margins: true  # bool, default is false
+window-margin-size: 10  # pixels, default is 0
 
 # modifier keys: shift | control | option | command
 #
-mod1:  # default was shift + option
+# default was shift + option
+mod1:
   - shift
   - command
 #
-mod2:  # default was shift + control + option
+# default was shift + control + option
+mod2:
   - shift
   - control
   - command
