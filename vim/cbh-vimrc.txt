@@ -86,6 +86,13 @@ set colorcolumn=80,88 " homage to the IBM punch card with 80 columns
 " set colorcolumn=88 " a second upper bound for Python
 
 " *--------*
+" | COPY/PASTE - use macos copy/paste register, not vim's
+" *--------*-------------------------------------
+let mapleader=" "
+noremap <Leader>y "*y
+noremap <Leader>p "*p
+
+" *--------*
 " | CURSOR |
 " *--------*-------------------------------------
 set cursorline " highlight current line with an underline
@@ -151,7 +158,8 @@ set spellcapcheck=
 " | STATUS LINE |
 " *-------------*--------------------------------
 " status line like Derek Wyatt
-set stl=%f\ %m\ %r\ Line:\ %l/%L[%p%%]\ Col:\ %c\ Buf:\ #%n\ [%b][0x%B]
+" set stl=%f\ %m\ %r\ Line:\ %l/%L[%p%%]\ Col:\ %c\ Buf:\ #%n\ [%b][0x%B]
+set stl=%f\ %m\ %r\ Line:\ %l/%L[%p%%]\ Col:\ %c\ Buf:\ #%n
 "
 hi StatusLine ctermbg=black ctermfg=red
 "
