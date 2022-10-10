@@ -23,7 +23,6 @@ set nocompatible " forget about compatibility with old vi
 " word being changed.
 set cpoptions+=$
 
-
 " *--------*
 " | COLORS |
 " *--------*-------------------------------------
@@ -88,7 +87,8 @@ set colorcolumn=80,88 " homage to the IBM punch card with 80 columns
 " *--------*
 " | COPY/PASTE - use macos copy/paste register, not vim's
 " *--------*-------------------------------------
-let mapleader=" "
+" let mapleader=" "
+let mapleader=";"
 noremap <Leader>y "*y
 noremap <Leader>p "*p
 
