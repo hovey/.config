@@ -1,4 +1,19 @@
-" 2022-09-30 
+" 2023-10-04
+"
+" Install vim-plug
+" https://github.com/junegunn/vim-plug
+" Download plug.vim and put it in the "autoload" directory.
+" Unix:
+" curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+call plug#begin('~/.vim/plugged')   " use single quotes, not double quotes
+Plug 'junegunn/vim-easy-align'  " Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
+" Plug 'https://github.com/junegunn/vim-github-dashboard.git'  " Any valid git URL is allowed
+Plug 'kaicataldo/material.vim', { 'branch': 'main' }
+"
+" Plug etc etc
+call plug#end() " Initialize plugin system
+" Then reload .vimrc and :PlugInstall to install plugins.
+"
 " Learn what's new in vim 9.0
 " from https://www.youtube.com/watch?v=ZvKH-LZ-_6A Amit Shukla 2022-08-27
 " https://github.com/AmitXShukla/AmitXShukla.github.io/tree/master/blogs/vim
@@ -12,8 +27,8 @@
 " *--------------------*
 " | 000 INITIALIZATION |
 " *--------------------*-------------------------
-set nocompatible " forget about compatibility with old vi
-"set t_Co=256 " force 256 colors on the terminal
+set nocompatible  "avoid compatibility with old vi, use vim instead
+set t_Co=256      "force 256 colors on the terminal
 
 " *-------------*
 " | CHANGE WORD |
@@ -51,14 +66,14 @@ set cpoptions+=$
 "cream      #ffefd5 (255,239,213)
 "
 " http://vimdoc.sourceforge.net/htmldoc/syntax.html
-syntax enable " keep your current color settings and allows :highlight commands
-"syntax on " make Vim overrule your color settings
+"syntax enable " keep your current color settings and allows :highlight commands
+syntax on " make Vim overrule your color settings
 set showmode " turn on showing of current mode
 " colorschemes
 "colo blue
 "colo darkblue
 "set background=light
-colo default
+"colo default
 " set background=light
 "colo delek
 "colo desert       "fairly nice
@@ -68,6 +83,7 @@ colo default
 "colo industry
 "colo koehler      "nice, dark, bright
 "colo lunaperche   "nice, dark, saturated
+colo material      " from Plug 'kaicataldo/material.vim', { 'branch': 'main' }, remember to :PlugInstall again
 "colo morning      "not good, white background
 "colo murphy       "dark, nice, lots of golds and yellows
 "colo pablo        "dark, comments are in light gray
@@ -101,8 +117,9 @@ noremap <Leader>p "*p
 " | CURSOR |
 " *--------*-------------------------------------
 set cursorline " highlight current line with an underline
-hi cursorline cterm=none " turn off the default underline
-hi cursorline ctermbg=darkgray
+highlight cursorline term=bold cterm=bold guibg=green
+"hi cursorline cterm=none " turn off the default underline
+"hi cursorline ctermbg=darkgray
 au InsertEnter * hi CursorLine ctermbg=black guibg=black 
 au InsertLeave * hi CursorLine ctermbg=darkgray guibg=darkgray 
 "highlight Cursor guifg=white guibg=black
@@ -137,7 +154,7 @@ set ignorecase " ignore caps lock
 " | LINE NUMBERS |
 " *--------------*-------------------------------
 set number " turn on line numbering
-highlight LineNr ctermbg=gray ctermfg=darkblue guibg=gray guifg=green
+" highlight LineNr ctermbg=gray ctermfg=darkblue guibg=gray guifg=green
 
 
 " *-----------*
