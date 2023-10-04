@@ -59,30 +59,35 @@ set showmode " turn on showing of current mode
 "colo darkblue
 "set background=light
 colo default
-set background=light
+" set background=light
 "colo delek
-"colo desert
-"colo evening
-"colo koehler
-"colo morning
-"colo murphy
-"colo pablo
-"colo peachpuff
-"colo ron
-"colo shine
+"colo desert       "fairly nice
+"colo elford       "not on s1060600
+"colo evening      "also nice
+"colo habamax      "nice dark, with reds
+"colo industry
+"colo koehler      "nice, dark, bright
+"colo lunaperche   "nice, dark, saturated
+"colo morning      "not good, white background
+"colo murphy       "dark, nice, lots of golds and yellows
+"colo pablo        "dark, comments are in light gray
+"colo peachpuff    "not goot, peach background
+"colo quiet        "not good, light background
+"colo ron          "not good, lots of green and reds on black background
+"colo shine        "not good, light gray
+"colo solarized    "not found
 "colo slate
-"colo torte
-"colo zelner
-"colorscheme solarized
-set background=light " change from default to light background
+"colo torte        "fair, reds and purples
+"colo zellner      "not good, light gray background
+" set background=light " change from default to light background
 "set background=dark " change from default to dark background
 "
 "
 " *--------*
 " | COLUMN |
 " *--------*-------------------------------------
-set colorcolumn=80,88 " homage to the IBM punch card with 80 columns
-" set colorcolumn=88 " a second upper bound for Python
+" set colorcolumn=80,88 " homage to the IBM punch card with 80 columns
+set colorcolumn=88 " a second upper bound for Python
 
 " *--------*
 " | COPY/PASTE - use macos copy/paste register, not vim's
