@@ -1,4 +1,4 @@
-" 2023-10-04
+" 2023-10-05
 "
 " Install vim-plug
 " https://github.com/junegunn/vim-plug
@@ -8,9 +8,15 @@
 call plug#begin('~/.vim/plugged')   " use single quotes, not double quotes
 Plug 'junegunn/vim-easy-align'  " Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
 " Plug 'https://github.com/junegunn/vim-github-dashboard.git'  " Any valid git URL is allowed
-Plug 'kaicataldo/material.vim', { 'branch': 'main' }
+" Plug etc
+" Plug etc
 "
-" Plug etc etc
+" Material colorscheme begin
+" https://github.com/kaicataldo/material.vim
+Plug 'kaicataldo/material.vim', { 'branch': 'main' }
+" below, set the colorscheme to material via :colo material
+" Material colorscheme end
+"
 call plug#end() " Initialize plugin system
 " Then reload .vimrc and :PlugInstall to install plugins.
 "
@@ -83,7 +89,14 @@ set showmode " turn on showing of current mode
 "colo industry
 "colo koehler      "nice, dark, bright
 "colo lunaperche   "nice, dark, saturated
+" material color scheme begin
+"let g:material_theme_style = 'default'
+"let g:material_theme_style = 'palenight'
+"let g:material_theme_style = 'ocean'
+let g:material_theme_style = 'lighter'
+"let g:material_theme_style = 'darker'
 colo material      " from Plug 'kaicataldo/material.vim', { 'branch': 'main' }, remember to :PlugInstall again
+" material color scheme end
 "colo morning      "not good, white background
 "colo murphy       "dark, nice, lots of golds and yellows
 "colo pablo        "dark, comments are in light gray
@@ -117,7 +130,8 @@ noremap <Leader>p "*p
 " | CURSOR |
 " *--------*-------------------------------------
 set cursorline " highlight current line with an underline
-highlight cursorline term=bold cterm=bold guibg=green
+" highlight cursorline term=bold cterm=bold guibg=gray
+highlight cursorline term=bold cterm=bold ctermbg=darkgray guibg=darkgray
 "hi cursorline cterm=none " turn off the default underline
 "hi cursorline ctermbg=darkgray
 au InsertEnter * hi CursorLine ctermbg=black guibg=black 
