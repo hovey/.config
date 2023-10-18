@@ -2,6 +2,7 @@
 "
 " Install vim-plug
 " https://github.com/junegunn/vim-plug       "that is with a G (not Q) in GUNN
+" macOS and Windows:
 " Download plug.vim and put it in ~/.vim/autoload
 " Unix:
 " curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
