@@ -1,3 +1,3 @@
-function cb
+function bb
   cargo build
 end

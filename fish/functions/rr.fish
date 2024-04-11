@@ -1,3 +1,3 @@
-function cb
+function rr
   cargo run
 end
