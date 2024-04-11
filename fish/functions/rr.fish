@@ -1,3 +1,3 @@
 function cb
-  cargo build
+  cargo run
 end
