@@ -20,4 +20,11 @@ Items for personal and work macs.
       "command": "workbench.action.nextEditor",
       "when": "editorFocus && vim.active && !inDebugRepl && vim.mode != 'Insert'"
     }
+* Vertical cursor centering
+  * `/Users/chovey/.config/vim/cbh-vimrc.txt`
+    * `set scrolloff=999 " center the cursor vertically in screen center`
+    * `" set scrolloff=999 " center the cursor vertically in screen center`
+  * [Command + Shift + P], "user settings json"
+    *     "editor.cursorSurroundingLines": 30,
+        "editor.cursorSurroundingLines": 2,
 
