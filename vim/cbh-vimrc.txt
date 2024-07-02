@@ -175,21 +175,21 @@ set number " turn on line numbering
 " *-----------*
 " | SCROLLING |
 " *-----------*----------------------------------
-set scrolloff=999 " center the cursor vertically in screen center
+" set scrolloff=999 " center the cursor vertically in screen center
 
 
 " *----------*
 " | SPELLING |
 " *----------*-----------------------------------
-set spell " enable spell check
-" For misspelled words, change from red block highlight to red underline
-hi clear SpellBad
-"hi SpellBad cterm=underline ctermfg=red
-"hi SpellBad ctermbg=gray ctermfg=red
-hi SpellBad cterm=underline ctermfg=darkred
-"
-" Turn off spelling check of capitalized letters
-set spellcapcheck=
+"  set spell " enable spell check
+"  " For misspelled words, change from red block highlight to red underline
+"  hi clear SpellBad
+"  "hi SpellBad cterm=underline ctermfg=red
+"  "hi SpellBad ctermbg=gray ctermfg=red
+"  hi SpellBad cterm=underline ctermfg=darkred
+"  "
+"  " Turn off spelling check of capitalized letters
+"  set spellcapcheck=
 
 " *-------------*
 " | STATUS LINE |
