@@ -42,4 +42,13 @@ function fish_user_key_bindings
     bind '$' bind_dollar
 end
 
+# 2024-06-03
+#  chovey@s1088757/Users/chovey> eval "$(/opt/homebrew/bin/brew shellenv)"
+#  chovey@s1088757/Users/chovey> which brew
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
+# 2025-01-07
+# make a permanent alias across all fish sessions
+function am
+    /Users/chovey/autotwin/automesh/target/release/automesh $argv
+end
