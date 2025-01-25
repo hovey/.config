@@ -1,6 +1,23 @@
 # Keyboard Shortcuts
 
-2024-11-09
+created: 2024-11-09
+updated: 2025-01-25
+
+# Magnet window manager short cuts
+
+## "cmd + shift + j" 
+
+* Tile window 1/2 left
+
+## "cmd + shift + l"
+
+* Tile window 1/2 right
+
+## "cmd + shift + enter"
+
+* Tile window full screen
+
+# VS Code Keyboard Short Cuts
 
 ## "cmd+k cmd+right" (added user "cmd+shift+]")
 
@@ -82,5 +99,6 @@
 ## "shift+cmd+k"
 
 * Source: System
-  * Command: Delete LIne
+  * Command: Delete Line
   * When: textInputFocus && !editorReadonly
+
