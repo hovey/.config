@@ -150,7 +150,11 @@ au InsertLeave * hi CursorLine ctermbg=darkgray guibg=darkgray
 " *-------*--------------------------------------
 " set foldmethod=indent
 " hi Folded ctermbg=black
-
+" set all to unfolded (no folds)
+" open all folds at startup
+" keep folding enabled but open all folds when starting Vim
+set foldmethod=indent  " or 'syntax', 'expr', etc., depending on your needs
+set foldlevelstart=99  " Open all folds
 
 " *----------*
 " | KEYBOARD |  
